@@ -1,0 +1,27 @@
+{
+  "name": "geog-project",
+  "version": "1.0.0",
+  "homepage": "http://sbhousing.wulfcode.com",
+  "authors": [
+    "Sean Prasertsit <sean@prasertsit.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/sb-seanp/geog-project.git"
+  },
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "latest",
+    "jquery.tablesorter": "latest",
+    "animate.css": "latest",
+    "materialize": "~0.96.1"
+  }
+}

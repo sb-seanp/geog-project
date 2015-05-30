@@ -1,5 +1,7 @@
 extends layout
-
 block content
-  h1= title
-  p Welcome to #{title}
+    .container
+        .valign-wrapper
+            #map-container
+                img#base-map(src='/images/basemap.jpg' alt='Map')
+                img.overlay#rent-map.hide(src='/images/rent.png' alt='Rent')

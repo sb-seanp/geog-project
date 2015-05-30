@@ -1,0 +1,1 @@
+.container{width:100%}#map-container{position:relative;}#map-container img{display:block;width:100%}#map-container .overlay{position:absolute;top:0;opacity:.2}#map-container #base-map{z-index:20}#map-container #rent-map{z-index:10}

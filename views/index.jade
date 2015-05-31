@@ -6,9 +6,10 @@ block content
                 ul.tabs
                     li.tab.col.s2: a(href='#base-map') Basemap
                     li.tab.col.s2: a(href='#rent-map') Rent
-                    li.tab.col.s2: a(href='#beach-map') Beach
+                    li.tab.col.s2: a(href='#beach-map') Beach Proximity
                     li.tab.col.s2: a(href='#noise-map') Noise
                     li.tab.col.s2: a(href='#bus-map') Bus
+                    li.tab.col.s2: a(href='#poi-map') Points of Interest
                 #map-container
                     img.animated.fadeIn.z-depth-2#base-map(src='/images/basemap.jpg' alt='Map')
                     img.animated.fadeIn.overlay.z-depth-2#rent-map(src='/images/rent.jpg' alt='Rent')
@@ -36,3 +37,8 @@ block content
                             p.col.s3
                                 input#twentyseven(type='checkbox' checked='checked')
                                 label(for='twentyseven') 27
+                    .animated.fadeIn.overlay#poi-map
+                        img.z-depth-2(src='/images/poi.jpg' alt='POI')
+                        .sub-container.z-depth-2.row
+                            p Nightlife
+                            p Grocery/Amenities

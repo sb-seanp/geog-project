@@ -11,7 +11,28 @@ block content
                     li.tab.col.s2: a(href='#bus-map') Bus
                 #map-container
                     img.animated.fadeIn.z-depth-2#base-map(src='/images/basemap.png' alt='Map')
-                    img.animated.fadeIn.overlay#rent-map(src='/images/rent.png' alt='Rent')
-                    img.animated.fadeIn.overlay#beach-map(src='/images/beach.png' alt='Beach')
-                    img.animated.fadeIn.overlay#noise-map(src='/images/noise.png' alt='Noise')
-                    img.animated.fadeIn.overlay#bus-map(src='/images/bus.png' alt='Bus')
+                    img.animated.fadeIn.overlay.z-depth-2#rent-map(src='/images/rent.png' alt='Rent')
+                    .animated.fadeIn.overlay#beach-map
+                        img.z-depth-2(src='/images/beach.png' alt='Beach')
+                        .sub-container.z-depth-2.row
+                            p In miles.
+                    img.animated.fadeIn.overlay.z-depth-2#noise-map(src='/images/noise.png' alt='Noise')
+                    .animated.fadeIn.overlay#bus-map
+                        img.animated.fadeIn.z-depth-2#base-map(src='/images/basemap.png' alt='Map')
+                        img.overlay#fifteenx-map(src='/images/fifteenx.png' alt='Bus')
+                        img.overlay#sixeleven-map(src='/images/sixeleven.png' alt='Bus')
+                        img.overlay#twentyfourx-map(src='/images/twentyfourx.png' alt='Bus')
+                        img.overlay#twentyseven-map(src='/images/twentyseven.png' alt='Bus')
+                        .sub-container.z-depth-2.row
+                            p.col.s3
+                                input#fifteenx(type='checkbox' checked='checked')
+                                label(for='fifteenx') 15x
+                            p.col.s3
+                                input#sixeleven(type='checkbox' checked='checked')
+                                label(for='sixeleven') 6/11
+                            p.col.s3
+                                input#twentyfourx(type='checkbox' checked='checked')
+                                label(for='twentyfourx') 24x
+                            p.col.s3
+                                input#twentyseven(type='checkbox' checked='checked')
+                                label(for='twentyseven') 27

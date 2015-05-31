@@ -1,5 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
 
+*.html
+*.css
 public/bower_components
 
 ### JetBrains template

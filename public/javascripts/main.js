@@ -14,4 +14,7 @@ $(document).ready(function() {
     $('#twentyseven').change(function() {
         $('#twentyseven-map').toggleClass('hide');
     });
+    $('#rent-table').tablesorter({
+        sortList: [[0,0],[0,0]]
+    });
 });

@@ -12,7 +12,10 @@ block content
                     li.tab.col.s2: a(href='#poi-map') Points of Interest
                 #map-container
                     img.animated.fadeIn.z-depth-2#base-map(src='/images/basemap.jpg' alt='Map')
-                    img.animated.fadeIn.overlay.z-depth-2#rent-map(src='/images/rent.jpg' alt='Rent')
+                    .animated.fadeIn.overlay#rent-map
+                        img.z-depth-2(src='/images/rent.jpg' alt='Rent')
+                        .sub-container.z-depth-2.row
+                            include rent
                     .animated.fadeIn.overlay#beach-map
                         img.z-depth-2(src='/images/beach.jpg' alt='Beach')
                         .sub-container.z-depth-2.row
@@ -42,3 +45,6 @@ block content
                         .sub-container.z-depth-2.row
                             p Nightlife
                             p Grocery/Amenities
+
+                        .sub-container.z-depth2.row
+                            img(src='/images/nightlife.png' alt='table')

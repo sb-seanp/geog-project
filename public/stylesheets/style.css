@@ -56,3 +56,8 @@ body {
   margin-left: inherit;
   margin-right: inherit;
 }
+#about {
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+}

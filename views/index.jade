@@ -4,12 +4,13 @@ block content
         .row
             .col.s12
                 ul.tabs
-                    li.tab.col.s2: a(href='#base-map') Basemap
-                    li.tab.col.s2: a(href='#rent-map') Rent
-                    li.tab.col.s2: a(href='#beach-map') Beach Proximity
-                    li.tab.col.s2: a(href='#noise-map') Noise
-                    li.tab.col.s2: a(href='#bus-map') Bus
-                    li.tab.col.s2: a(href='#poi-map') Points of Interest
+                    li.tab.col.s1: a(href='#base-map') Basemap
+                    li.tab.col.s1: a(href='#rent-map') Rent
+                    li.tab.col.s1: a(href='#beach-map') Beach Proximity
+                    li.tab.col.s1: a(href='#noise-map') Noise
+                    li.tab.col.s1: a(href='#bus-map') Bus
+                    li.tab.col.s1: a(href='#poi-map') Points of Interest
+                    li.tab.col.s1: a(href='#about') About
                 #map-container
                     img.animated.fadeIn.z-depth-2#base-map(src='/images/basemap.jpg' alt='Map')
                     .animated.fadeIn.overlay#rent-map
@@ -48,3 +49,9 @@ block content
 
                         .sub-container.z-depth2.row
                             img(src='/images/nightlife.png' alt='table')
+                    .animated.fadeIn.z-depth-2.overlay#about
+                        p Created at University of California, Santa Barbara by
+                        p Shirley Ng, Sean Prasertsit, Madeline Sayre, and Jessica Steele
+                        p View source on <a href="http://github.com/sb-seanp/geog-project">Github</a>
+                        p View project as <a href="../documents/game_of_homes.pdf">PDF</a>
+                        p &copy; 2015 Wulfcode
